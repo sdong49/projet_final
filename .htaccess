@@ -1,0 +1,12 @@
+# http vers https
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+# www vers sans www
+RewriteCond %{HTTP_HOST} ^www\.stock-du-biere\.com [NC]
+RewriteRule ^(.*)$ http://stock-du-biere.com/$1 [L,R=301]
+
+# redirection 404
+ErrorDocument 404 /page-404.html

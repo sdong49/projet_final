@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    font-weight: bold;
+}
+
+ul{
+    list-style-type:none
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*--------------------bande haut de la page-----------------------*/
+.haut{
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    background-color:rgb(196, 136, 38) ;
+
+}
+.haut ul{
+    text-align: center; 
+    padding-top: 7px;
+    padding-left: 0;
+}
+
+.haut ul li{
+    display:inline;          
+}
+
+.haut .contact-header li{
+  margin: 0 10px;
+}
+
+.haut .contact-header img{
+    width: 20px;
+    height: 18px;
+
+}
+
+.haut ul li img{
+    height: 30px;
+}
+
+
+
+
+
+/*--------bandeau--------*/
+.bandeau{
+    display:flex;
+    width: 80%;
+    margin:auto;
+    justify-content: space-between;   
+}
+
+.bandeau .logo{
+    width:25%;
+    margin-left: 0px;   
+}
+
+.bandeau h1{
+    font-size: 1em;
+    color: rgb(73, 73, 73);
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.bandeau form #recherche{
+    display: none;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.bandeau .compte #bouton-recherche{
+    cursor: pointer;
+  
+}
+.bandeau .compte img{
+    height: 30px;
+}
+
+
+
+/*-----menuprincipal--------*/
+
+.bandeau .menuprincipal{  
+    width:60%;
+    padding-top:150px;
+ 
+}
+
+.bandeau .menuprincipal .menu-mobile,.menuprincipal #menu-mobile{
+    display: none;
+}
+
+.bandeau .menuprincipal ul{
+   display: flex;
+   justify-content: space-between;   
+}
+
+.bandeau .menuprincipal .active{
+    color: rgb(196, 136, 38);
+    font-weight: bold;
+}
+
+.bandeau .compte{
+    padding-top:150px;
+    justify-content: flex-end;
+    display: flex;
+    width: 20%;   
+      
+}
+
+.bandeau .compte img{
+    margin-left: 30px;
+}
+
+/*-----------slider----------*/
+
+#wrapper{
+    width: 80%;
+    margin: auto;
+    
+}
+#wrapper img{
+    width: 100%;
+}
+
+/*----type produit------*/
+.produit{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.types-produit{
+    display: flex;
+    justify-content: space-around;
+}
+
+.types-produit .type{
+    position: relative;  
+    width: 200px;  
+}
+
+.types-produit .type figure{
+    margin: auto;
+}
+
+
+.types-produit .type img{
+    width:100%;
+    
+}
+
+.types-produit .type .mask{
+    position:absolute;
+    top:0;
+    left:0;
+    padding-top:40%;
+    padding-bottom: -20%;
+    width:100%;
+    height:60%;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    font-size: 1.5em;
+    font-weight: bold;  
+}
+
+h2{
+    text-align: center;
+}
+.types-produit .type .mask:hover{
+    opacity: 1;  
+}
+
+/*-------actualité------------*/
+
+
+.actu{
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    justify-content: space-between;
+
+}
+
+ .actu .bloc-actu{
+    width: 50%;
+    background-color:rgb(241, 241, 241);
+    text-align: center;
+    padding-top: 40px;
+}
+.actu .media{
+    width: 50%;
+    
+}
+
+.actu .media img{
+    width: 100%;
+    
+}
+
+.actu .media iframe{
+    width: 100%;
+}
+
+.actu .bloc-actu p{
+    width: 90%;
+    margin: auto;
+}
+
+.actu .bloc-actu .bouton{
+    background-color: rgb(169, 136, 38);
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 40%;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+
+
+/*-------footer----------*/
+.pied-de-page{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(73, 73, 73) ;
+    color: white;
+    padding: 30px 100px 40px 100px;
+    line-height:30px;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+
+
+.pied-de-page .aide{
+    
+    width: 25%;
+}
+
+.pied-de-page .a-propre{
+   
+    width: 25%;
+    margin-left: 180px;
+}
+
+.pied-de-page a{
+    color: white;
+}
+
+.pied-de-page a:hover{
+    text-decoration: underline;
+}
+
+.pied-de-page .reseaux-sociaux{
+    
+    width: 25%;
+    margin-left: 200px;
+}
+
+.pied-de-page .reseaux-sociaux img{
+    width: 40px;
+}
+/*------dernier ligne-------*/
+.dernier-ligne{
+    display: flex;
+    font-size: 0.7em;
+    justify-content: space-between;
+}
+
+.dernier-ligne .menu-pied ul li{
+    display: inline;
+}
+
+.dernier-ligne a{
+    text-decoration: underline;
+}
+
+/*-------------------Mediaqueries-----------*/
+@media screen and (min-width:576px) and (max-width:992px){
+
+    /*body{
+        background-color: silver;
+    }*/
+/*---------haut de page------*/
+    .haut{
+        font-size: 0.8em;
+        font-weight: bold;
+        width: 100%;
+        height: 80px;
+        background-color:rgb(196, 136, 38) ;
+    }
+    .haut ul li{
+        display:block;          
+    }
+
+    .bandeau h1{
+        text-align: center;
+    }
+    
+    .bandeau .logo{
+        width:30%;
+    }
+
+/*------------menuburger----------*/
+    .bandeau .menuprincipal{
+        position: relative;  
+        width:50%;  
+    }
+
+    .bandeau .menuprincipal ul li{
+        display: block;
+        line-height: 34px;
+        font-size:1em; 
+    }
+    .bandeau .menuprincipal .menu-mobile{
+        display: block;
+        margin-left: 10px;
+        
+    }
+    .bandeau .menuprincipal #menu-mobile:not(:checked),#menu-mobile:checked{
+        position: absolute;
+        left:-9999px;
+    }
+
+    .bandeau .menuprincipal [type="checkbox"]:checked+label+ul{
+        display: block;
+    }
+
+    .bandeau .menuprincipal .menu-mobile img{
+        width: 30px;
+    }
+    
+    
+    .bandeau .menuprincipal ul{
+        display: none;
+    }
+
+    
+    /*--------produit------*/
+    .types-produit{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .types-produit .type{
+        position: relative;   
+        width: 35%;   
+        padding:auto;
+    }
+
+  
+    /*--------actu-------*/
+    .actu{
+        display:block;
+        margin:50px auto;
+    }
+
+    .actu .bloc-actu{
+        width: 100%;
+        min-height:180px;
+    }
+
+    .actu .media{
+        width: 100%;
+    }
+
+   
+
+    /*--------footer----*/
+    .pied-de-page{
+        padding: 30px 70px 40px 50px;
+    }
+
+    .pied-de-page .aide{
+        width: 32%;
+    }
+    
+    .pied-de-page .a-propre{
+        width: 32%;
+        margin-left: 20px;
+    }
+
+    .pied-de-page .reseaux-sociaux{
+        width: 30%;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width:576px){
+
+
+
+/*---------haut de page------*/
+.haut{
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+    background-color:rgb(196, 136, 38) ;
+}
+.haut ul li{
+    display:block;          
+}
+
+
+.bandeau .logo{
+    width: 38%;
+
+}
+
+.bandeau .menuprincipal{
+    width: 30%;
+}
+
+.bandeau .compte{
+    width: 30%;
+}
+
+.bandeau h1{
+    text-align: center;
+}
+ /*------------menuburger----------*/
+
+
+
+
+
+ .bandeau .menuprincipal{
+    position: relative;  
+     
+}
+
+.bandeau .menuprincipal ul li{
+    display: block;
+    line-height: 34px;
+    font-size:1em; 
+}
+.bandeau .menuprincipal .menu-mobile{
+    display: block;
+    margin-left: 10px;
+    
+}
+.bandeau .menuprincipal #menu-mobile:not(:checked),#menu-mobile:checked{
+    position: absolute;
+    left:-9999px;
+}
+
+.bandeau .menuprincipal [type="checkbox"]:checked+label+ul{
+    display: block;
+}
+
+.bandeau .menuprincipal .menu-mobile img{
+    width: 30px;
+}
+
+
+.bandeau .menuprincipal ul{
+    display: none;
+}  
+/*----slider------*/
+.slider{
+    display: none;
+}
+
+/*-----produit----*/
+.types-produit{
+    display: block;
+    
+}
+
+.types-produit .type{
+    position: relative;   
+    width: 60%;   
+    margin: 30px auto;
+}
+
+
+/*--------actu-------*/
+.actu{
+    display:block;
+    margin:50px auto;
+}
+
+.actu .bloc-actu{
+    width: 100%;
+    min-height:180px;
+}
+
+.actu .media{
+    width: 100%;
+}
+
+.actu .bloc-actu .bouton{
+    background-color: rgb(169, 136, 38);
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 40%;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+  /*--------footer----*/
+  .pied-de-page{
+    padding: 30px 70px 40px 50px;
+}
+
+.pied-de-page .aide{
+    width: 32%;
+}
+
+.pied-de-page .a-propre{
+    width: 32%;
+    margin-left: 20px;
+}
+
+.pied-de-page .reseaux-sociaux{
+    width: 30%;
+    margin-left: 30px;
+}
+
+.dernier-ligne{
+    display: block;
+}
+}
+
+
+
+
+
+
+
+
+
+
+

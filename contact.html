@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Contactez nous</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="bière">
+    <meta name="description" content="contacter biere en stock, sva, livraison">
+    <!--lien vers la feuille de style-->
+    <link rel="stylesheet" href="public/css/style.css" >
+    <link rel="stylesheet" href="public/css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!----haut de la page----->
+   <header>
+        <div class="haut">    
+            <ul class="contact-header">
+                <li><img src="public/images/location.png" alt="" > Rue de Prat Lann 56000 VANNES</li>
+                <li><img src="public/images/tel.png" alt="" > 02 22 22 22 22</li>
+                <li><img src="public/images/email.png" alt=""><a href="mailto:name@email.com"> contact@gmail.com</a></li>
+            </ul> 
+        </div> 
+        <div class="bandeau">
+            <figure class="logo">
+                <a href="accueil.html"><img src="public/images/logo_c.jpg" alt="logo-bière en stock"></a>
+                <h1>La biere du monde</h1>
+            </figure>
+            <!--menuprincipal-->
+            <nav class="menuprincipal">
+                <input type="checkbox" id="menu-mobile" role="button">
+                <label for="menu-mobile" class="menu-mobile">
+                    <img src="public/images/menuburger.png" alt="icone-menu-burger">
+                </label>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit.html">Produits</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="blog.html" >Blog</a></li>
+                    <li><a href="contact.html"class="choix">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="compte">                
+                <a href=""><img src="public/images/panier_c.png" alt="mon-panier"></a>
+                <a href="connecter.html"><img src="public/images/compte_c.png" alt="mon-compte"></a>
+                <img src="public/images/loupe_c.png" alt="bouton-recherche" id="bouton-recherche">
+            </div>
+            <form>
+                <input type="search" id="recherche" >
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <!--------------formulaire-------------->
+        <section class="contact">
+            <p class="titre">Formulaire de contact</p>
+            <form method="POST" action="traitement.php" class="formulaire">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                        <p class="gerne">
+                            <input type="radio" name="gerne" value="m." id="m."/>
+                            <label for="m.">M.*</label>
+                            <input type="radio" name="gerne" value="mme" id="mme"/>
+                            <label for="mme">Mme*</label>
+                        </p>
+                        <div class="colonnes">
+                            <div class="colonne">
+                                <p><label for="nom">Votre nom*</label>
+                                    <input type="text" name="nom"/>
+                                </p>
+                                <p><label for="email">Votre email*</label>
+                                    <input type="text" name="email"/>
+                                </p>
+                            </div>
+                            <div class="colonne">
+                                <p><label for="prenom">Votre prénom*</label>
+                                    <input type="text" name="prenom"/> 
+                                </p>  
+                                <p><label for="tel">Votre téléphone*</label>
+                                    <input type="tel" name="tel"/>
+                                </p>                    
+                            </div> 
+                        </div>              
+                        <p class="adresse">
+                            <label for="adresse">Votre adresse*</label>
+                            <textarea name="adresse" rows="2"></textarea>
+                        </p> 
+                </fieldset>
+                <fieldset>
+                    <legend>Vos messages</legend>
+                        <div class="colonnes">
+                            <div class="colonne">
+                                <label for="numero-commande">N° de commande</label>
+                                <input type="text" name="numero-commande"/>
+                            </div>
+                            <div class="colonne">
+                                <label for="motif">Modif*</label>
+                                <select name="motif" id="motif">
+                                    <option value="livraison">Livraison</option>
+                                    <option valeur="paiement">Paiement</option>
+                                    <option value="retour">Retour</option>
+                                </select>                    
+                            </div> 
+                        </div> 
+                    <p class="message">
+                            <label for="message">Votre message*</label>
+                            <textarea name="message" rows="10" ></textarea>
+                    </p>
+                </fieldset>
+                <p>
+                    * champs obligatoires
+                    S'il s'agit d’une question sur une commande, 
+                    pensez-bien à indiquer son numéro dans la rubrique 
+                    « N° de commande » du formulaire.
+                </p>
+                <p class="bouton-contact">
+                    <input type="submit" value="Envoyer"> 
+                    <input type="reset" value="Annuler">
+                </p>
+            </form>
+            <div class="acces">  
+                    <p>Trouvrez-nous sur la carte</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.92019771653!2d-2.7750422848950493!3d47.647117579187416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1ee7bc3d91%3A0xa622fa4c9bf9c44c!2sLyc%C3%A9e%20G%C3%A9n%C3%A9ral%20et%20technologique%20Alain%20Rene%20Lesage!5e0!3m2!1sfr!2sfr!4v1574709778102!5m2!1sfr!2sfr" width="800" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+        </section>    
+    </main>
+    <footer>
+        <section class="pied-de-page">
+            <article class="aide">
+                <p>Aide</p>
+                <a href="#">Livraison</a><br>
+                <a href="#">Retour</a><br>
+                <a href="#">Paiement</a><br>
+                <a href="#">Conditions générales de ventes</a><br>
+                <a href="#">Question fréquentes</a><br>                    
+            </article>
+            <article class="a-propre">
+                <P>A propre<P>
+                <a href="#">Qui sommes-nous?</a><br>
+                <a href="#">Nous contacter</a><br>
+                <a href="#">Recrutement</a><br>               
+            </article>
+            <article class="reseaux-sociaux">
+                <p>Suivez-nous</p>
+                
+                    <a href="#"><img src="public/images/facebook.png" alt="facebook-biere-en-stock"></a>
+                    <a href="#"><img src="public/images/instagram.png" alt="instagram-biere-en-stock"></a>
+                    <a href="#"><img src="public/images/twitter.png" alt="twitter-biere-en-stock"></a>            
+                                
+            </article>
+        </section>
+        <section class="dernier-ligne">
+            <a href="page politique de confid.html">POLITIQUE DE CONFIDENTIALITÉ</a>
+            <a href="plan-du-site.html">Plan du site</a>
+            <nav class="menu-pied">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>     
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $("#bouton-recherche").click(function () {
+    $("#recherche").toggle();
+    });
+    </script>
+</body>
+</html>
