@@ -5,7 +5,6 @@
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 a:hover
@@ -48,7 +47,10 @@ body{
 .haut .contact-header img{
     width: 20px;
     height: 18px;
+}
 
+.haut .contact-header a{
+    color: rgb(0, 0, 0);
 }
 
 .haut ul li img{
@@ -116,6 +118,11 @@ body{
     font-weight: bold;
 }
 
+.bandeau .menuprincipal ul a{
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+}
+
 .bandeau .compte{
     padding-top:150px;
     justify-content: flex-end;
@@ -180,7 +187,7 @@ body{
     font-weight: bold;  
 }
 
-h2{
+.produit h2{
     text-align: center;
 }
 .types-produit .type .mask:hover{
