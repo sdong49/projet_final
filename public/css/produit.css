@@ -39,7 +39,7 @@
 }
 
 .bloc_articles_produit{
-    border: solid 5px rgb(220, 220, 220);
+    box-shadow: 8px 8px 4px rgb(220, 220, 220);
     width: 22%;
     font-size: 0.9em;
     text-align: center;

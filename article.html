@@ -50,8 +50,9 @@
             </div>
         </header>
         <!-----contenue de la page article----->
-        <main class="container">     
-            <section class="article_page_article">
+        <main class="container"> 
+            <!------ la première section "description" de l'article-->    
+            <section class="description">
                 <div class="img_article">
                     <img src="public/images/page_article_02.jpg" alt="biere-de-la-rade-la-girette">
                 </div>
@@ -106,17 +107,23 @@
                     </table>
                 </div>
             </section>
+
+            <!------ la deuxième section "notices" de l'article-->
             <section class="notices">
                 <ul class="notices_hd">
-                    <li >DÉTAILS</li>
+                    <li class="active">DÉTAILS</li>
                     <li>GOÛT</li>
                     <li>BRASSEUR</li>
                 </ul>
                 <ul class="notices_bd">
                     <li class="active">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, 
-                        aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus 
-                        faucibus. Curabitur quis varius libero. Lorem.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit,
+                         aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. 
+                         Curabitur quis varius libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                         Aliquam placerat sem at mauris suscipit porta. Cras metus velit, 
+                         elementum sed pellentesque a, pharetra eu eros. Etiam facilisis placerat euismod. 
+                         Nam faucibus neque arcu, quis accumsan leo tincidunt varius. In vel diam enim.
+                          Sed id ultrices ligula. Maecenas at urna arcu. Sed.
                     </li>
                     <li>
                         Nuances de goût
@@ -171,12 +178,14 @@
                 </nav>
             </aside>
         </footer>
-        <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
-        <!--------javascript Slider --------->
-        <script type="text/javascript" src="public/js/slider.js"></script>
-        
+        <!----- jQuery ----->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!----- -->            
+        <script>
+            $(function(){
+
+            });
+        </script>
   
 
 
