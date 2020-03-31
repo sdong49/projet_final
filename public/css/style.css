@@ -5,6 +5,7 @@
 
 a{
     text-decoration: none;
+    color: rgb(73, 73, 73);
 }
 
 a:hover
@@ -18,6 +19,7 @@ ul{
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(73, 73, 73);
 }
 
 
@@ -28,20 +30,19 @@ body{
     width: 100%;
     height: 30px;
     background-color:rgb(196, 136, 38) ;
+    margin-bottom: 10px;
 
 }
-.haut ul{
+.haut .contact-header{
     text-align: center; 
     padding-top: 7px;
     padding-left: 0;
 }
 
-.haut ul li{
-    display:inline;          
-}
-
 .haut .contact-header li{
   margin: 0 10px;
+  display:inline; 
+  color: rgb(0, 0, 0);
 }
 
 .haut .contact-header img{
@@ -49,17 +50,9 @@ body{
     height: 18px;
 }
 
-.haut .contact-header a{
+.haut .contact-header a {
     color: rgb(0, 0, 0);
 }
-
-.haut ul li img{
-    height: 30px;
-}
-
-
-
-
 
 /*--------bandeau--------*/
 .bandeau{
@@ -67,42 +60,58 @@ body{
     width: 80%;
     margin:auto;
     justify-content: space-between;   
-}
-
-.bandeau .logo{
-    width:25%;
-    margin-left: 0px;   
-}
-
-.bandeau h1{
-    font-size: 1em;
-    color: rgb(73, 73, 73);
-    font-family: 'Montserrat', sans-serif; 
-}
-
-.bandeau form #recherche{
-    display: none;
-    margin-top: 160px;
-    margin-left: 10px;
-}
-
-.bandeau .compte #bouton-recherche{
-    cursor: pointer;
   
 }
-.bandeau .compte img{
+
+/*------la partie gauche du bandeau "logo"-----*/
+
+.bandeau .gouche_bandeau{
+    width:15%; 
+    
+}
+
+/*------la partie droite du bandeau -----*/
+.bandeau .droite_bandeau{
+    width: 85%;
+}
+
+.haut_droite_bandeau{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+}
+
+/*-----la barre de recherche----*/
+.bandeau .droite_bandeau .recherche{
+    position: relative;
+    
+}
+
+.bandeau .droite_bandeau .recherche input{
+    height: 30px;
+    width: 350px;
+    padding-left: 5px;
+    border: solid 2px rgb(196, 136, 38);
+    
+}
+
+.bandeau .droite_bandeau .recherche .loupe{
+    background: url(../images/loupe_c.png) no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    left: 322px;    
+}
+/*-----connexion------*/
+.bandeau .droite_bandeau .compte img{
+    margin-top: 1px;
+    margin-left: 20px;
     height: 30px;
 }
 
-
-
 /*-----menuprincipal--------*/
-
-.bandeau .menuprincipal{  
-    width:60%;
-    padding-top:150px;
- 
-}
 
 .bandeau .menuprincipal .menu-mobile,.menuprincipal #menu-mobile{
     display: none;
@@ -110,7 +119,9 @@ body{
 
 .bandeau .menuprincipal ul{
    display: flex;
-   justify-content: space-between;   
+   padding-top: 20px;
+   justify-content: space-around; 
+    
 }
 
 .bandeau .menuprincipal .active{
@@ -123,23 +134,11 @@ body{
     font-weight: bold;
 }
 
-.bandeau .compte{
-    padding-top:150px;
-    justify-content: flex-end;
-    display: flex;
-    width: 20%;   
-      
-}
-
-.bandeau .compte img{
-    margin-left: 30px;
-}
-
 /*-----------slider----------*/
 
 #wrapper{
     width: 80%;
-    margin: auto;
+    margin:20px auto;
     
 }
 #wrapper img{
@@ -322,7 +321,7 @@ body{
         text-align: center;
     }
     
-    .bandeau .logo{
+    .bandeau .gouche_bandeau{
         width:30%;
     }
 
@@ -429,7 +428,7 @@ body{
 }
 
 
-.bandeau .logo{
+.bandeau .gouche_bandeau{
     width: 38%;
 
 }

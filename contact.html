@@ -13,42 +13,50 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-   <!----haut de la page----->
+   <!-------tête de page------->
    <header>
+       <!------bandeau contact tout en haut-->
         <div class="haut">    
             <ul class="contact-header">
                 <li><img src="public/images/location.png" alt="" > Rue de Prat Lann 56000 VANNES</li>
                 <li><img src="public/images/tel.png" alt="" > 02 22 22 22 22</li>
                 <li><img src="public/images/email.png" alt=""><a href="mailto:name@email.com"> contact@gmail.com</a></li>
             </ul> 
-        </div> 
+        </div>
+
+        <!--deuxième partie de la tête de page "logo" "recherche" "munu principal" "compte"-->
         <div class="bandeau">
+            <!------logo------>
             <figure class="logo">
                 <a href="accueil.html"><img src="public/images/logo_c.jpg" alt="logo-bière en stock"></a>
-                <h1>La biere du monde</h1>
+                <h1>BIÈRE DU MONDE</h1>
             </figure>
-            <!--menuprincipal-->
-            <nav class="menuprincipal">
-                <input type="checkbox" id="menu-mobile" role="button">
-                <label for="menu-mobile" class="menu-mobile">
-                    <img src="public/images/menuburger.png" alt="icone-menu-burger">
-                </label>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="produit.html">Produits</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="blog.html" >Blog</a></li>
-                    <li><a href="contact.html"class="choix">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="compte">                
-                <a href=""><img src="public/images/panier_c.png" alt="mon-panier"></a>
-                <a href="connecter.html"><img src="public/images/compte_c.png" alt="mon-compte"></a>
-                <img src="public/images/loupe_c.png" alt="bouton-recherche" id="bouton-recherche">
+            
+            <div>
+                <!--menu principal-->
+                <nav class="menuprincipal">
+                    <input type="checkbox" id="menu-mobile" role="button">
+                    <label for="menu-mobile" class="menu-mobile">
+                        <img src="public/images/menuburger.png" alt="icone-menu-burger">
+                    </label>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produit.html">Produits</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="blog.html" >Blog</a></li>
+                        <li><a href="contact.html"class="choix">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="compte">                
+                    <a href=""><img src="public/images/panier_c.png" alt="mon-panier"></a>
+                    <a href="connecter.html"><img src="public/images/compte_c.png" alt="mon-compte"></a>
+                    <img src="public/images/loupe_c.png" alt="bouton-recherche" id="bouton-recherche">
+                </div>
+                <form>
+                    <input type="search" id="recherche" >
+                </form>
             </div>
-            <form>
-                <input type="search" id="recherche" >
-            </form>
+         
         </div>
     </header>
     <main class="container">

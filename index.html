@@ -11,50 +11,59 @@
         <link rel="stylesheet" href="public/css/style.css"type="text/css" media="screen" >
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
-    <body>
-        
+    <body>     
+        <!-------tête de page------->
         <header>
-            <!----bande haut de la page----->
+            <!------bandeau contact tout en haut-->
             <div class="haut">    
                 <ul class="contact-header">
                     <li><img src="public/images/location.png" alt="" > Rue de Prat Lann 56000 VANNES</li>
                     <li><img src="public/images/tel.png" alt="" > 02 22 22 22 22</li>
                     <li><img src="public/images/email.png" alt=""><a href="mailto:name@email.com"> contact@gmail.com</a></li>
                 </ul> 
-            </div> 
+            </div>
+              <!--deuxième partie de la tête de page "logo" "recherche" "munu principal" "compte"-->
             <div class="bandeau">
-                <figure class="logo">
-                    <a href="index.html"><img src="public/images/logo_c.jpg" alt="logo-bière en stock"></a>
-                    <h1>La biere du monde</h1>
-                </figure>
-                <!--menuprincipal-->
-                <nav class="menuprincipal">
-                    <input type="checkbox" id="menu-mobile" role="button">
-                    <label for="menu-mobile" class="menu-mobile">
-                        <img src="public/images/menuburger.png" alt="icone-menu-burger">
-                    </label>
-                    <ul>
-                        <li><a href="index.html" class="active">Accueil</a></li>
-                        <li><a href="produit.html">Produits</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <!------connextion------>
-                <div class="compte">                
-                    <a href="connecter.html"><img src="public/images/compte_c.png" alt="mon-compte"></a>
+                <!------logo------>
+                <div class="gouche_bandeau">
+                    <a href="accueil.html"><img src="public/images/logo_c.jpg" alt="logo-bière en stock"></a>
+                    
                 </div>
+                <div class="droite_bandeau">
+                    <div class="haut_droite_bandeau">
+                         <!--la barre de recherche-->
+                        <div class="recherche">
+                            <input type="text">
+                            <a href="#"class="loupe"></a>
+                        </div>
+                        <!------connextion------>
+                        <div class="compte">                
+                            <a href="connecter.html"><img src="public/images/compte_c.png" alt="mon-compte"></a>                          
+                        </div>
+                    </div>
+                    <!--menuprincipal-->
+                    <nav class="menuprincipal">
+                        <input type="checkbox" id="menu-mobile" role="button">
+                        <label for="menu-mobile" class="menu-mobile">
+                            <img src="public/images/menuburger.png" alt="icone-menu-burger">
+                        </label>
+                        <ul>
+                            <li><a href="index.html" class="active">Accueil</a></li>
+                            <li><a href="produit.html">Produits</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>             
               
             </div>
         </header>
         <main class="container">         
               <!-----------slider-------------->
-            <div id="slider" class="slider">
-              
+            <div id="slider" class="slider">             
                 <div id="wrapper">
-                </div>
-             
+                </div>            
             </div>
             <!----------partie produit----------->
             <section class="produit">
