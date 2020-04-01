@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="public/css/style.css"type="text/css" media="screen" >
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
-    <body>     
+    <body id="body">     
         <!-------tête de page------->
         <header>
             <!------bandeau contact tout en haut-->
@@ -26,8 +26,7 @@
             <div class="bandeau">
                 <!------logo------>
                 <div class="gouche_bandeau">
-                    <a href="accueil.html"><img src="public/images/logo_c.jpg" alt="logo-bière en stock"></a>
-                    
+                    <a href="accueil.html"><img src="public/images/logo_c.jpg" alt="logo-bière en stock"></a>                    
                 </div>
                 <div class="droite_bandeau">
                     <div class="haut_droite_bandeau">
@@ -38,7 +37,30 @@
                         </div>
                         <!------connextion------>
                         <div class="compte">                
-                            <a href="connecter.html"><img src="public/images/compte_c.png" alt="mon-compte"></a>                          
+                            <img src="public/images/compte_c.png" alt="mon-compte" onclick="openModal();">
+                            <!----- Modal connexion------>
+                            <div class="modal" id="modal">                                                                                                     
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <div class="close" onclick="closeModal();">X</div>
+                                    <h4 class="modal-title">Connectez-vous</h4>
+                                </div>                                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                        <label for="nom-utilisateur" class="objet">Adresse email</label>
+                                        <input type="text" name="nom-utilisateur" placeholder="Votre adresse email" id="emailins" required/><br>
+                                        <span id="erreuremailins"></span><br>
+                                        <label for="password"class="objet" >Mot de passe</label>
+                                        <input type="text" name="nom-utilisateur" placeholder="Votre mot de passe" id="pwd" required/><br>
+                                        <span id="erreurpasswordins"></span><br>
+                                        <a href="#"class="">Vous avez oublié votre nom d'utilisateur ou mot de passe ?</a><br>
+                                        <a href="inscription.html">Vous n'avez pas vous inscirit ?</a><br>
+                                        <input type="submit" value="Connecter" class="bouton-connecter" id="btn-connecter"> 
+                                        <input type="reset" value="Annuler" class="bouton-connecter">          
+                                    </form>
+                                </div>                                                                      
+                            </div>            
                         </div>
                     </div>
                     <!--menuprincipal-->
@@ -55,8 +77,7 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
-                </div>             
-              
+                </div>                          
             </div>
         </header>
         <main class="container">         
@@ -167,11 +188,37 @@
                 </nav>
             </aside>
         </footer>
-        <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
-        <!--------javascript Slider --------->
+        <!-------- chargement de la fiche script Slider --------->
         <script type="text/javascript" src="public/js/slider.js"></script>
+
+        <!--script de la boite model "connexion"-->
+        <script>
+            let modal;
+            let body;
+            window.onload = function(){
+                modal = document.getElementById("modal");
+                body = document.getElementById("body");
+            };
+            function openModal(){
+                modal.style.display = "block";
+                
+                body.style.opacity = "0.6";
+                modal.style.opacity = "1";
+
+
+            };
+            function closeModal(){
+                modal.style.display="none";
+                body.style.opacity = "1";
+            }
+
+        </script>
+
+
+        <!----- jQuery ----->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
         
   
 
